@@ -1,0 +1,88 @@
+<html>
+<head>
+  <title> www.FSD08 Batch.com</title>
+  
+  <script src="calcu.js"> </script>
+
+  <link rel="stylesheet" href="calcu.css"/> 
+
+
+</head>
+
+<body>
+  
+  <div class="main">
+    
+    <table align="center">
+<tr>
+   <td colspan="4"> <input type="text" id ="t1"name="reslut" placeholder="0" style="text-align:right"></td></tr>
+   <div class="length">
+    <tr>
+    </tr>
+    <td class="heading">Weight</td>
+  <tr>
+    <td><button class="weight" type="button" onclick="handleWeightConversion('kgToG')">kg to g</button></td>
+    <td><button class="weight" type="button" onclick="handleWeightConversion('gToKg')">g to kg</button></td>
+    <td><button class="weight" type="button" onclick="handleWeightConversion('kgToPounds')">kg to pounds</button></td>
+    <td><button class="weight" type="button" onclick="handleWeightConversion('poundsToKg')">pounds to kg</button></td>
+  </tr>
+  <tr>
+    <td><button class="weight" type="button" onclick="handleWeightConversion('ozToKg')">oz to kg</button></td>
+    <td><button class="weight" type="button" onclick="handleWeightConversion('kgToOz')">kg to oz</button></td>
+    <td><button class="weight" type="button" onclick="handleWeightConversion('kgToTonne')">kg to t</button></td>
+    <td><button class="weight" type="button" onclick="handleWeightConversion('tonneToKg')">t to kg</button></td>
+
+  </tr>
+  <td class="heading">Length</td>
+     <tr>
+      <td><button class="length" type="button" onclick="handleLengthConversion('inToCm')">in to cm</button></td>
+      <td><button class="length" type="button" onclick="handleLengthConversion('cmToIn')">cm to in</button></td>
+      <td><button class="length" type="button" onclick="handleLengthConversion('cmToMm')">cm to mm</button></td>
+      <td><button class="length" type="button" onclick="handleLengthConversion('mmToCm')">mm to cm</button></td>
+    </tr>
+   
+      
+   </div>
+   <td class="heading">Trignometric</td>
+   <tr>
+
+    <td><button class="trigoBtns" type="button" onclick="handleSin()">sin</button></td>
+    <td><button class="trigoBtns" type="button" onclick="handleCos()">cos</button></td>
+    <td><button class="trigoBtns" type="button" onclick="handleTan()">tan</button></td>
+   
+   <td><button class="operator"  type="button" onclick="handleOp('+')"> +</button></td></tr>
+   <td class="heading">Basic</td>
+   <tr>
+    <td><button type="button" onclick="squareRoot()">√</button></td>
+    <td><button type="button" onclick="cubeRoot()">∛</button></td>
+    <td><button type="button" onclick="cube()">x<sup>3</sup></button></td>
+    <td><button type="button" onclick="square()">x<sup>2</sup></button></td>
+   <tr>
+   <td><button class="number" type="button"  onclick="handleNumber('7')"> 7</button></td>
+   <td><button class="number" type="button"  onclick="handleNumber('8')"> 8</button></td>
+   <td><button class="number" type="button"  onclick="handleNumber('9')"> 9</button></td>
+   <td><button class="operator" type="button"  onclick="handleOp('-')"> -</button></td> </tr>
+
+   <tr>
+
+   <td><button class="number" type="button"  onclick="handleNumber('4')"> 4</button></td>
+   <td><button class="number" type="button"  onclick="handleNumber('5')"> 5</button></td>
+   <td><button class="number" type="button"  onclick="handleNumber('6')"> 6</button></td>
+   <td><button class="operator" type="button"  onclick="handleOp('*')"> *</button></td> </tr>
+    
+   <tr>
+   <td><button class="number" type="button" onclick="handleNumber('1')"> 1</button></td>
+   <td><button class="number" type="button" onclick="handleNumber('2')"> 2</button></td>
+   <td><button class="number" type="button" onclick="handleNumber('3')"> 3</button></td>
+   <td><button class="operator" type="button"  onclick="handleOp('/')"> /</button></td></tr>
+
+   <tr>
+    
+   <td><button class="equal" type="button" onclick="cal()"> =</button></td>
+   <td><button class="number" type="button" onclick="handleNumber('0')"> 0</button></td>
+   <td><button class="clear" type="button" onclick="rem('C')"> C</button></td>
+   <td><button class="operator" type="button" onclick="handleOp('%')"> %</button></td></tr>
+  </table>
+  </div>
+</body>
+</html>
